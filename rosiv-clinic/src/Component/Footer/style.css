@@ -1,0 +1,159 @@
+.footerBox{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    justify-content: center;
+    align-self: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.78), rgba(4, 6, 30, 0.67));
+    padding: 30px;
+    text-align: center;
+}
+
+:root {
+    --mainColor: #29335c;
+    --mainColorLight: #5767aa;
+    --secondaryColor: #305ec1;
+    --textColor: #eee;
+    --transColor: rgba(0, 0, 0, 0.73);
+}
+
+a{
+    text-decoration: none;
+}
+
+
+.meetWithUs{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.footerBtn{
+    border: 1px solid white;
+    padding: 10px 20px;
+    width: 300px;
+    margin: 20px auto;
+}
+
+.footerBtn a{
+    color: white;
+    text-decoration: none;
+}
+
+
+.secondBox{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    width: 100%;
+}
+
+.footerLogo{
+    color: white;
+    margin: 20px;
+}
+
+.secondBox h4{
+    color: #305ec1;
+    font-size: 2.3rem;
+    font-weight: 400;
+    margin-bottom: 20px;
+}
+
+
+.label button{
+    background: #305ec1;
+    border: 1px solid #ffffff;
+    padding: 10px 20px;
+    color: white;
+    font-size: 15px;
+    font-weight: bold;
+}
+
+.label button:hover,
+.footerBtn:hover
+{
+    color: #305ec1;
+    background: #ffffff;
+    border: 1px solid white;
+    cursor: pointer;
+}
+
+.footerBtn:hover a{
+    color: #305ec1;
+}
+
+.webLinks{
+    display: flex;
+    margin: 20px 0;
+    text-align: center;
+    display: grid;
+    justify-content: center;
+    grid-template-columns: repeat(6, 1fr);
+}
+.webLinks a{
+    margin: 0 1rem;
+    color: var(--textColor);
+    text-decoration: none;
+   
+}
+
+.webLinks a:hover{
+    color: #8e99ce;
+}
+
+.linkIconBox{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.linkIcon{
+    margin: 10px;
+    padding: 5px;
+    border-radius: 10px;
+    
+}
+
+.linkIcon:hover{
+    cursor: pointer;
+    background: #8e99ce;
+}
+
+@media only screen and (max-width: 768px) {
+    .footerBox{
+        height: auto;
+        grid-template-columns: 1fr;
+    }
+    .meetWithUs h1,
+     h1, .secondBox h4{
+        font-size: 1.5rem;
+    }
+
+    .label{
+        display: flex;
+        flex-direction: column;
+        width: 100%;
+        justify-content: center;
+    }
+
+   .label input{
+        width: 100%;
+       margin: 20px 0;
+    }
+
+    .webLinks{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .webLinks a{
+        margin: 1   0px 0;
+    }
+
+    .footerBtn{
+        width: 100%;
+    }
+}

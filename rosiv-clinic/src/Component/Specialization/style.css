@@ -1,0 +1,86 @@
+.specialization{
+    width: 100%;
+    padding: 20px;
+}
+.headerSpecial{
+    text-align: start;
+    width: 900px;
+    color: #305ec1;
+    font-size: 3rem;
+    font-family: 'Josefin Sans', sans-serif;
+    padding-left: 10px;
+    margin: 30px 0;
+}
+
+
+.gridServices{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(450px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+}
+
+.gridServices img{
+    width: 30%;
+}
+
+.gridServices span{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridServices span label{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: start;
+    width: 300px;
+    margin: 10px;
+}
+
+.gridServices span h5{
+    margin: 10px 0;
+    font-size: 20px;
+    color: #305ec1;
+}
+
+.gridServices span p{
+    color: #353b54;
+}
+
+.gridServices span a{
+    text-decoration: none;
+    margin: 10px 0;
+    text-transform: capitalize;
+    border-bottom: 1px solid #eeeeee;
+}
+
+.gridServices span a:hover{
+    font-weight: bold;
+}
+
+.gridServices span label p{
+    text-align: start;
+}
+
+@media only screen and (max-width: 768px) {
+    .specialization .headerSpecial{
+        font-size: 2rem;
+        width: 100%;
+    }
+
+    .gridServices{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    .gridServices span{
+        flex-direction: column;
+    }
+
+    .gridServices span label{
+        width: 100%;
+    }
+}

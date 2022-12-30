@@ -1,0 +1,118 @@
+.gridMission{
+    width: 100%;
+}
+
+
+.gridOne,
+.gridTwo,
+.gridThree
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.leftMission {
+    padding: 10px;
+}
+
+
+.innerLeft{
+    display: flex;
+    flex-direction: column;
+    align-self: flex-start;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.innerLeft p:first-child:first-letter{
+    color: #305ec1;
+    font-size: 30px;
+}
+
+.innerLeft ul{
+    padding: 0;
+}
+
+.innerLeft ul li{
+    list-style: none;
+}
+
+.rightMission{
+    width: 100%;
+    height: 100%;
+}
+
+.gridOne .rightMission{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(48, 94, 193, 0.37)), url('../../../Images/benjamin-lehman-gkZ-k3xf25w-unsplash.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridTwo .rightMission{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(48, 94, 193, 0.37)), url('../../../Images/vision.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+.gridThree .rightMission{
+    background-image: linear-gradient(rgba(0, 0, 0, 0.71), rgba(48, 94, 193, 0.37)), url('../../../Images/mision.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    display: grid;
+    justify-content: center;
+    align-items: center;
+}
+
+
+.rightMission h1{
+    color: whitesmoke;
+    font-size: 5rem;
+    text-transform: capitalize;
+}
+
+
+.vision {
+    color: white;
+    background: rgba(86, 91, 115, 0.39);
+    padding: 10px;
+}
+
+.innerLeft h3{
+    color: #305ec1;
+}
+
+@media only screen and (max-width: 1100px) {
+    .gridOne,
+    .gridTwo,
+    .gridThree
+    {
+       display: block;
+        width: 100%;
+        height: auto;
+        margin: 20px 0;
+    }
+
+    .rightMission{
+        height: 100vh;
+    }
+
+    .rightMission h1{
+        font-size: 2rem;
+    }
+}

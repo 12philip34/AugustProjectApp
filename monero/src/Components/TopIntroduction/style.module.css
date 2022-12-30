@@ -1,0 +1,92 @@
+.topContainer{
+    width: 100%;
+    height: 100vh;
+    position: relative;
+    
+}
+
+:root {
+    --secondaryColor: #e88a2c;
+    --textColor: #eee;
+    --transColor: rgba(0, 0, 0, 0.73);
+}
+
+.myVideo{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.89)(0, 0, 0, 0.842), rgba(0, 0, 0, 0.822));
+    z-index: 10;
+}
+
+.introduction{
+    z-index: 10;
+    position: absolute;
+    top: 50%;
+    width: 100%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    height: 300px;
+    border: 10px;
+    padding: 30px;
+}
+
+.introduction label{
+    padding: 30px;
+}
+
+.introduction label h3{
+    color: var(--secondaryColor);
+    text-transform: capitalize;
+    font-size: 3rem;
+}
+
+.introduction label p{
+    color: var(--textColor);
+}
+
+.aboutBtn,
+.joinBtn
+{
+    margin: 20px;
+    padding: 10px;
+    color: var(--textColor);
+    background: #A5682CFF;
+    border: none;
+    text-transform: capitalize;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+.aboutBtn:hover{
+    color: #4c2f13;
+}
+
+.joinBtn:hover{
+    color: #4c2f13;
+}
+
+
+
+@media only screen and (max-width: 768px) {
+    .topContainer{
+        width: 100%;
+    }
+
+    .topContainer label h3{
+        font-size: 2rem;
+    }
+
+    .btnBox{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+
+}

@@ -1,0 +1,125 @@
+.doctorSay{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-self: center;
+    background-image: url('../../Images/Group 4.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    gap: 10px;
+    width: 100%;
+    height: 100%;
+}
+
+.doctorSay .image{
+    position: relative;
+}
+
+.image img{
+    width: calc(100% + 20px);
+    height: 100%;
+}
+
+.image span{
+    width: 200px;
+    position: absolute;
+    top: 15%;
+    right: 15%;
+    border: 1px solid #8e99ce;
+    border-radius: 10px;
+    padding: 10px;
+    background: #ffffff;
+}
+
+.image span h5 {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.image span p{
+    color: #305ec1;
+}
+
+.rightDetails{
+   display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(rgba(0, 0, 0, 0.21), rgba(0, 0, 0, 0));
+    padding: 10px;
+}
+
+.rightDetails h1{
+    color: #305ec1;
+    font-size: 3rem;
+    text-transform: capitalize;
+    background: none;
+}
+
+.rightDetails p{
+    margin: 10px 0;
+}
+
+.healthHack{
+    margin: 30px 10px;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    column-gap: 30px;
+    align-self: start;
+}
+
+.healthHack h5{
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.button a{
+    text-decoration: none;
+}
+
+ .button{
+    padding: 10px 20px;
+    background: #305ec1;
+    color: white;
+     text-align: center;
+    border: none;
+    outline: none;
+    font-size: 15px;
+}
+
+.button:hover{
+    cursor: pointer;
+    background: #ffffff;
+    color: #305ec1;
+    border: 1px solid #305ec1;
+}
+
+@media only screen and (max-width: 768px) {
+    .doctorSay{
+        grid-template-columns: 1fr;
+    }
+
+    .image img{
+        width: 100%;
+    }
+
+    .image span{
+        top: 79%;
+    }
+
+    .rightDetails{
+        padding-top: 50px;
+    }
+
+    .rightDetails h1{
+        font-size: 2rem;
+    }
+
+    .healthHack{
+        grid-template-columns: 1fr;
+    }
+}

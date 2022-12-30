@@ -1,0 +1,90 @@
+.guideAndResourcesBox{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    justify-content: center;
+    align-items: center;
+    background: whitesmoke;
+    gap: 10px;
+    padding: 10px;
+}
+
+.left{
+    padding: 20px;
+    background: white;
+}
+
+.right{
+    padding: 20px;
+    background: #a5682c;
+}
+
+.right h1{
+    color: white;
+    font-weight: bold;
+}
+.left h1{
+    color: #4c2f13;
+    padding: 10px 0;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.right p{
+    color: whitesmoke;
+    font-size: 20px;
+}
+.left p{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.left button,
+.right button{
+    padding: 10px 20px;
+    background: whitesmoke;
+    border: 2px solid #4c2f13;
+}
+
+.left button a,
+.right button a{
+    color: #4c2f13;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    text-transform: capitalize;
+}
+
+
+.left button ,
+.right button {
+    margin: 10px 20px;
+}
+
+
+.left button:hover,
+.right button:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background: #4c2f13;
+}
+
+.left button:hover a,
+.right button:hover a{
+    color: #ffffff;
+    text-decoration: none;
+    background: #4c2f13;
+}
+
+
+@media only screen and (max-width: 768px) {
+    .guideAndResourcesBox{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+}
+
+@media only screen and (min-width: 769px) and (max-width: 1364px) {
+
+}

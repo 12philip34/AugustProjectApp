@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+/*font-family: 'Poppins', sans-serif;*/
+/*font-family: 'Roboto', sans-serif;*/
+
+.gridContainerReverse{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    padding: 10px;
+}
+
+.leftLayerReverse
+.rightLayerReverse
+{
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+}
+
+.headerReverse{
+    color: #4c2f13;
+    padding: 10px 0;
+    text-transform: capitalize;
+    font-size: 25px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.paragraphReverse{
+    padding: 10px 0;
+    font-size: 20px;
+}
+
+.buttonReverse{
+    padding: 10px 20px;
+    background: whitesmoke;
+    border: 2px solid #4c2f13;
+}
+
+.buttonReverse a{
+    color: #4c2f13;
+    text-decoration: none;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.buttonReverse:hover{
+    color: #ffffff;
+    text-decoration: none;
+    background: #4c2f13;
+}
+
+.buttonReverse:hover a{
+    color: #ffffff;
+    text-decoration: none;
+    background: #4c2f13;
+}
+
+.rightLayerReverse{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.rightLayerReverse img{
+    width: 80%;
+}
+@media only screen and (max-width: 768px) {
+    .gridContainerReverse{
+        grid-template-columns: 1fr;
+        margin: 50px 0;
+    }
+
+    .rightLayerReverse{
+        padding-left: 30px;
+    }
+
+    .rightLayerReverse img{
+        width: 100%;
+    }
+}

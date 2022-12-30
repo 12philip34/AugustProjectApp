@@ -1,0 +1,182 @@
+a{
+    color: white;
+}
+.stateConditions{
+    width: 100%;
+}
+
+.stateConditions h5{
+    text-align: start;
+    color: #305ec1;
+    font-size: 3rem;
+    padding-left: 10px;
+}
+
+.stateConditions h5:nth-child(2){
+    padding-bottom: 50px;
+    border-bottom: 1px solid #8e99ce;
+}
+
+.stateConditions h5:nth-child(1){
+    padding-top: 30px;
+}
+
+.cardBox{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    gap: 30px;
+    justify-content: center;
+    align-self: center;
+    margin-top: 20px;
+    padding: 20px;
+}
+
+.card{
+    margin: 20px;
+    border-radius: 10px;
+    padding-bottom: 10px;
+    border: none;
+}
+.card a{
+    text-decoration: none;
+}
+
+.card-img{
+    width: 100%;
+    height: 300px;
+}
+.card-img img{
+    width: 100%;
+    height: 100%;
+}
+
+.card-body{
+    padding: 10px;
+    text-align: center;
+}
+.card-body h1{
+    color: #305ec1;
+    font-size: 25px;
+    text-transform: capitalize;
+    margin: 10px 0;
+    text-align: center;
+
+}
+
+.card-body p{
+    margin-top: 0;
+    text-align: center;
+}
+.card .button{
+    display: flex;
+    align-self: start;
+    margin: 10px;
+    color: white;
+    background: #305ec1;
+    padding: 10px 20px;
+    border: 1px solid #305ec1;
+    outline: none;
+    font-weight: bold;
+}
+.card .button:hover,
+.button:hover
+{
+    cursor: pointer;
+    background: #ffffff;
+    color: #305ec1;
+}
+.button a{
+    color: white;
+}
+
+.button:hover a{
+    color: #305ec1;
+}
+.button{
+    margin: 10px;
+    color: white;
+    background: #305ec1;
+    padding: 10px 20px;
+    border: 1px solid #305ec1;
+    outline: none;
+    font-weight: bold;
+}
+
+.meetUs{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    margin-top: 40px;
+    align-self: center;
+    justify-content: center;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.84), rgba(0, 0, 0, 0.66)), url("../../Images/istockphoto-1287699196-612x612.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+}
+
+.innerMeetUsBox{
+    display: grid;
+    margin-top: 40px;
+    align-self: center;
+    justify-content: center;
+}
+
+.innerMeetUsBox h1{
+    color: #ffffff;
+    font-size: 3rem;
+    text-transform: capitalize;
+}
+
+.innerMeetUsBox p{
+    color: #8e99ce;
+    text-transform: lowercase;
+}
+.innerMeetUsBox p:nth-child(5){
+    margin-bottom: 20px;
+}
+
+.innerMeetUsBox button{
+    width: 300px;
+    margin: 0 auto;
+}
+
+@media only screen and (max-width: 768px) {
+    .cardBox{
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+    .innerMeetUsBox{
+        padding: 10px;
+    }
+    .stateConditions h5,
+    .innerMeetUsBox h1
+    {
+        font-size: 2rem;
+    }
+
+    .innerMeetUsBox h1{
+        margin-bottom: 20px;
+    }
+
+    .innerMeetUsBox h1,
+    .innerMeetUsBox p{
+        align-self: start;
+        text-align: start;
+    }
+
+    .stateConditions h5:nth-child(2){
+        padding-bottom: 30px;
+        border-bottom: 1px solid #8e99ce;
+    }
+    .card-img{
+        height: auto;
+    }
+    .card-body p,
+    .card-body h1
+    {
+        align-self: start;
+        text-align: start;
+    }
+}
